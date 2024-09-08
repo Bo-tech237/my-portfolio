@@ -11,8 +11,8 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-    title: 'My Portfolio',
-    description: 'Pixel perfect portfolio',
+    title: "Ferdinand's Portfolio",
+    description: 'Modern & Minimalist Ferdinand Portfolio',
 };
 
 export default function RootLayout({

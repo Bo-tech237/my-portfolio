@@ -11,25 +11,25 @@ const portfolioProjects = [
     {
         company: 'Acme Corp',
         year: '2022',
-        title: 'Dark Saas Landing Page',
+        title: 'E-learning Landing Page',
         results: [
             { title: 'Enhanced user experience by 40%' },
             { title: 'Improved site speed by 50%' },
             { title: 'Increased mobile traffic by 35%' },
         ],
-        link: 'https://youtu.be/4k7IdSLxh6w',
+        link: 'https://e-learning-phi-seven.vercel.app',
         image: darkSaasLandingPage,
     },
     {
         company: 'Innovative Co',
         year: '2021',
-        title: 'Light Saas Landing Page',
+        title: 'Fake Store',
         results: [
             { title: 'Boosted sales by 20%' },
             { title: 'Expanded customer reach by 35%' },
             { title: 'Increased brand awareness by 15%' },
         ],
-        link: 'https://youtu.be/7hi5zwO75yc',
+        link: 'https://fake-store-peach.vercel.app',
         image: lightSaasLandingPage,
     },
     {
@@ -41,7 +41,7 @@ const portfolioProjects = [
             { title: 'Improved site speed by 50%' },
             { title: 'Increased mobile traffic by 35%' },
         ],
-        link: 'https://youtu.be/Z7I5uSRHMHg',
+        link: '#',
         image: aiStartupLandingPage,
     },
 ];
