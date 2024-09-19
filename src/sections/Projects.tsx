@@ -23,25 +23,25 @@ const portfolioProjects = [
     {
         company: 'Innovative Co',
         year: '2021',
-        title: 'Fake Store',
+        title: 'Light Saas Landing Page',
         results: [
             { title: 'Boosted sales by 20%' },
             { title: 'Expanded customer reach by 35%' },
             { title: 'Increased brand awareness by 15%' },
         ],
-        link: 'https://fake-store-peach.vercel.app',
+        link: 'https://light-landing-page-seven.vercel.app/',
         image: lightSaasLandingPage,
     },
     {
         company: 'Quantum Dynamics',
         year: '2023',
-        title: 'AI Startup Landing Page',
+        title: 'Fake Store',
         results: [
             { title: 'Enhanced user experience by 40%' },
             { title: 'Improved site speed by 50%' },
             { title: 'Increased mobile traffic by 35%' },
         ],
-        link: '#',
+        link: 'https://fake-store-peach.vercel.app',
         image: aiStartupLandingPage,
     },
 ];
