@@ -1,10 +1,12 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 
 const footerLinks = [
-    { title: 'Youtube', href: '#' },
-    { title: 'Twitter', href: '#' },
+    { title: 'Facebook', href: 'https://web.facebook.com/arnaud.bokalli' },
     { title: 'Instagram', href: '#' },
-    { title: 'LinkedIn', href: '#' },
+    {
+        title: 'LinkedIn',
+        href: 'https://www.linkedin.com/in/bokalli-ferdinand-aa8bb5b3',
+    },
 ];
 
 export const Footer = () => {

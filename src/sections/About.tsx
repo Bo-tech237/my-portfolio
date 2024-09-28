@@ -16,6 +16,7 @@ import CardHeader from '@/components/CardHeader';
 import ToolboxItems from '@/components/ToolboxItems';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
+import { MyApproach } from '@/components/MyApproach';
 
 const toolboxItems = [
     {
@@ -179,6 +180,7 @@ export const AboutSection = () => {
                         </Card>
                     </div>
                 </div>
+                <MyApproach />
             </div>
         </div>
     );
