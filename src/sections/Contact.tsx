@@ -1,6 +1,6 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 import grainImage from '@/assets/images/grain.jpg';
-import { ContactForm } from '@/components/ContactForm';
+import ContactDialog from '@/components/ContactDialog';
 
 export const ContactSection = () => {
     return (
@@ -13,7 +13,7 @@ export const ContactSection = () => {
                             backgroundImage: `url(${grainImage.src})`,
                         }}
                     ></div>
-                    <div className="flex flex-col md:flex-row gap-8 md:gap-2 items-center">
+                    <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
                         <div>
                             <h2 className=" font-serif text-2xl md:text-3xl">
                                 Let&apos;s create something amazing together
@@ -24,9 +24,14 @@ export const ContactSection = () => {
                                 you achieve your goals.
                             </p>
                         </div>
-                        <div>
-                            <ContactForm />
-                        </div>
+                        <ContactDialog>
+                            <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
+                                <span className="font-semibold">
+                                    Contact me
+                                </span>
+                                <ArrowUpRightIcon className="size-4" />
+                            </button>
+                        </ContactDialog>
                     </div>
                 </div>
             </div>

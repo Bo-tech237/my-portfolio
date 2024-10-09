@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -18,7 +19,7 @@ import { Textarea } from './ui/textarea';
 import { contactSchema, contactTypes } from '@/schemas/schema';
 import { contactMe } from '@/actions/contactMe';
 
-export function ContactForm() {
+export function ContactForm({ onSend }: { onSend: () => void }) {
     const { toast } = useToast();
 
     const form = useForm<contactTypes>({
@@ -38,9 +39,15 @@ export function ContactForm() {
             message: '',
         });
 
+        onSend();
+
         toast({
             variant: 'success',
-            title: result?.message,
+            title: `${
+                result?.success === true
+                    ? result.message
+                    : 'Message sent successfully'
+            }`,
             description: `${new Date().toUTCString()}`,
         });
     }
@@ -57,6 +64,7 @@ export function ContactForm() {
                                 <FormLabel>Name</FormLabel>
                                 <FormControl>
                                     <Input
+                                        className="text-black"
                                         placeholder="Enter your name"
                                         type="text"
                                         {...field}
@@ -75,6 +83,7 @@ export function ContactForm() {
                                 <FormLabel>Email</FormLabel>
                                 <FormControl>
                                     <Input
+                                        className="text-black"
                                         placeholder="Enter your email"
                                         type="email"
                                         {...field}
@@ -94,7 +103,7 @@ export function ContactForm() {
                                 <FormControl>
                                     <Textarea
                                         placeholder="Enter message"
-                                        className="resize-none"
+                                        className="resize-none text-black"
                                         {...field}
                                     />
                                 </FormControl>
