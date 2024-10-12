@@ -1,5 +1,6 @@
 import StarIcon from '@/assets/icons/star.svg';
 import { Fragment } from 'react';
+import { useTranslations } from 'next-intl';
 
 const words = [
     'Performant',
@@ -16,6 +17,8 @@ const words = [
 ];
 
 export const TapeSection = () => {
+    const t = useTranslations('Tape.Words');
+
     return (
         <div className="py-16 lg:py-24 overflow-x-clip">
             <div className="bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1">
@@ -29,7 +32,7 @@ export const TapeSection = () => {
                                         className="inline-flex items-center gap-4"
                                     >
                                         <span className="text-gray-900 uppercase font-extrabold text-sm">
-                                            {word}
+                                            {t(word)}
                                         </span>
                                         <StarIcon className="size-6 text-gray-900 -rotate-12" />
                                     </div>

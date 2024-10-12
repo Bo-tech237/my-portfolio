@@ -17,6 +17,7 @@ import ToolboxItems from '@/components/ToolboxItems';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { MyApproach } from '@/components/MyApproach';
+import { useTranslations } from 'next-intl';
 
 const toolboxItems = [
     {
@@ -46,67 +47,34 @@ const toolboxItems = [
 ];
 
 const hobbies = [
-    {
-        title: 'Football',
-        emoji: '',
-        left: '5%',
-        top: '5%',
-    },
-    {
-        title: 'Traveling',
-        emoji: '',
-        left: '50%',
-        top: '5%',
-    },
-    {
-        title: 'Teaching',
-        emoji: '',
-        left: '35%',
-        top: '40%',
-    },
-    {
-        title: 'Gaming',
-        emoji: '',
-        left: '10%',
-        top: '35%',
-    },
-    {
-        title: 'Music',
-        emoji: '',
-        left: '70%',
-        top: '45%',
-    },
-    {
-        title: 'Fitness',
-        emoji: '',
-        left: '5%',
-        top: '65%',
-    },
-    {
-        title: 'Reading',
-        emoji: '',
-        left: '45%',
-        top: '70%',
-    },
+    { title: 'Football', emoji: '⚽', left: '5%', top: '5%' },
+    { title: 'Traveling', emoji: '✈️', left: '50%', top: '5%' },
+    { title: 'Teaching', emoji: '📚', left: '35%', top: '40%' },
+    { title: 'Gaming', emoji: '🎮', left: '10%', top: '35%' },
+    { title: 'Music', emoji: '🎶', left: '70%', top: '45%' },
+    { title: 'Fitness', emoji: '🏋️‍♂️', left: '5%', top: '65%' },
+    { title: 'Reading', emoji: '📖', left: '45%', top: '70%' },
 ];
 
 export const AboutSection = () => {
     const constraintRef = useRef(null);
 
+    const t = useTranslations('About');
+
     return (
         <div className="py-20 lg:py-28" id="about">
             <div className="container">
                 <SectionHeader
-                    eyebrow="About Me"
-                    title="A Glimpse Into My World"
-                    description="Learn more about who I am, what I do, and what inspires me."
+                    eyebrow={t('eyebrow')}
+                    title={t('title')}
+                    description={t('description')}
                 />
                 <div className="mt-20 flex flex-col gap-8">
                     <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
                         <Card className="h-[320px] md:col-span-2 lg:col-span-1">
                             <CardHeader
-                                title="My Reads"
-                                description="Explore the books shaping my perspectives."
+                                title={t('myReads.header')}
+                                description={t('myReads.description')}
                             />
                             <div className="w-40 mx-auto mt-2 md:mt-0">
                                 <Image src={bookImage} alt="Book cover" />
@@ -114,18 +82,21 @@ export const AboutSection = () => {
                         </Card>
                         <Card className="h-[320px] md:col-span-3 lg:col-span-2">
                             <CardHeader
-                                title="My Toolbox"
-                                description="Explore the technologies and tools I use to
-                                  craft exceptional digital experiences."
-                                className=""
+                                title={t('myToolbox.header')}
+                                description={t('myToolbox.description')}
                             />
                             <ToolboxItems
-                                items={toolboxItems}
-                                className=""
+                                items={toolboxItems.map((item) => ({
+                                    ...item,
+                                    title: t(`toolbox.${item.title}`), // Translate toolbox items
+                                }))}
                                 itemsWrapperClassName="animate-move-left [animation-duration:30s]"
                             />
                             <ToolboxItems
-                                items={toolboxItems}
+                                items={toolboxItems.map((item) => ({
+                                    ...item,
+                                    title: t(`toolbox.${item.title}`), // Translate toolbox items
+                                }))}
                                 className="mt-6"
                                 itemsWrapperClassName="animate-move-right [animation-duration:15s]"
                             />
@@ -134,9 +105,8 @@ export const AboutSection = () => {
                     <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
                         <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
                             <CardHeader
-                                title="Beyond the Code"
-                                description="Explore my interests and hobbies beyond the
-                                  digital realm."
+                                title={t('beyondTheCode.header')}
+                                description={t('beyondTheCode.description')}
                                 className="px-6 py-6"
                             />
                             <div
@@ -155,7 +125,7 @@ export const AboutSection = () => {
                                         dragConstraints={constraintRef}
                                     >
                                         <span className="font-medium text-gray-950">
-                                            {hobby.title}
+                                            {t(`hobbies.${hobby.title}`)}
                                         </span>
                                         <span>{hobby.emoji}</span>
                                     </motion.div>

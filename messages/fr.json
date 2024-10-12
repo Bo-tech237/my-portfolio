@@ -1,0 +1,187 @@
+{
+    "Nav": {
+      "nav1": "Accueil",
+      "nav2": "Projets",
+      "nav3": "À propos",
+      "nav4": "Contact"
+      
+    },
+    
+    "Hero": {
+      "text1": "Disponible pour de nouveaux projets",
+      "title": "Créer des expériences utilisateur exceptionnelles",
+      "text2": "Salut! Je suis Ferdinand, un développeur Next.js.",
+      "text3": "Je me spécialise dans la transformation des conceptions en applications web fonctionnelles et performantes. Discutons de votre prochain projet.",
+      "buttonText1": "Explorez mon travail",
+      "buttonText2": "Connectons nous"
+      
+    },
+
+    "Projects": {
+    "Header": {
+      "eyebrow": "Résultats Concrets",
+      "title": "Projets Présentés",
+      "description": "Découvrez comment j'ai transformé des concepts en expériences numériques engageantes.",
+      "button": "Visitez le Site en Direct"
+    },
+    "ProjectsList": {
+      "E-learningLandingPage": {
+        "company": "Acme Corp",
+        "year": "2022",
+        "title": "Page de destination E-learning",
+        "results":{
+          "title1":"Amélioration de l'expérience utilisateur de 40%",
+          "title2":"Amélioration de la vitesse du site de 50%",
+          "title3":"Augmentation du trafic mobile de 35%"
+        }
+      },
+      "LightSaasLandingPage": {
+        "company": "Innovative Co",
+        "year": "2021",
+        "title": "Page de destination Saas légère",
+        "results":{
+          "title1":"Augmentation des ventes de 20%",
+          "title2":"Élargissement de la portée des clients de 35%",
+          "title3":"Augmentation de la notoriété de la marque de 15%"
+        }
+      },
+      "FakeStore": {
+        "company": "Quantum Dynamics",
+        "year": "2023",
+        "title": "Magasin fictif",
+        "results":{
+          "title1":"Amélioration de l'expérience utilisateur de 40%",
+          "title2":"Amélioration de la vitesse du site de 50%",
+          "title3":"Augmentation du trafic mobile de 35%"
+        }
+      }
+    }
+  },
+
+    "Tape": {
+      "Words": {
+        "Performant": "Performant",
+        "Accessible": "Accessible",
+        "Secure": "Sécure",
+        "Interactive": "Interactif",
+        "Scalable": "Évolutif",
+        "User Friendly": "Conviviable",
+        "Responsive": "Réactif",
+        "Maintainable": "Maintenable",
+        "Search Optimized": "Optimisé pour la recherche",
+        "Usable": "Utilisable",
+        "Reliable": "Fiable"
+      }
+      
+    },
+
+    "Testimonials": {
+    "eyebrow": "Clients Satisfaits",
+    "title": "Ce que mes clients disent de moi",
+    "description": "Ne vous fiez pas seulement à mes mots. Voyez ce que mes clients pensent de mon travail.",
+    "Alex Turner": {
+      "position": "Responsable Marketing @ TechStartups",
+      "text": "Ferdinand a joué un rôle clé dans la transformation de notre site Web en un outil marketing puissant. Son souci du détail et sa capacité à comprendre notre marque sont exceptionnels. Nous sommes ravis des résultats !"
+    },
+    "Olivia Green": {
+      "position": "Responsable Design @ GreenLeaf",
+      "text": "Travailler avec Ferdinand a été un plaisir. Son expertise en développement frontend a donné vie à nos designs d'une manière que nous n'avons jamais imaginée. Le site Web a dépassé nos attentes."
+    },
+    "Daniel White": {
+      "position": "PDG @ InnovateCo",
+      "text": "La capacité de Ferdinand à créer des expériences utilisateur fluides est inégalée. Notre site Web a connu une augmentation significative des conversions depuis le lancement du nouveau design. Nous ne pourrions pas être plus heureux."
+    },
+    "Emily Carter": {
+      "position": "Chef de Produit @ GlobalTech",
+      "text": "Ferdinand est un véritable sorcier du frontend. Il a pris notre produit complexe et l'a transformé en une interface utilisateur intuitive et engageante. Nous recevons déjà des retours positifs de nos clients."
+    },
+    "Michael Brown": {
+      "position": "Directeur IT @ MegaCorp",
+      "text": "Le travail de Ferdinand sur notre site Web a été tout simplement exceptionnel. C'est un développeur talentueux qui est aussi un excellent communicateur. Nous le recommandons vivement."
+    }
+  },
+
+  "About": {
+        "eyebrow": "À propos de moi",
+        "title": "Un aperçu de mon monde",
+        "description": "Apprenez-en plus sur qui je suis, ce que je fais et ce qui m'inspire.",
+        "myReads": {
+            "header": "Mes lectures",
+            "description": "Explorez les livres qui façonnent mes perspectives."
+        },
+        "myToolbox": {
+            "header": "Ma boîte à outils",
+            "description": "Découvrez les technologies et outils que j'utilise pour créer des expériences numériques exceptionnelles."
+        },
+        "beyondTheCode": {
+            "header": "Au-delà du code",
+            "description": "Découvrez mes intérêts et passe-temps au-delà du domaine numérique."
+        },
+        "toolbox": {
+            "JavaScript": "JavaScript",
+            "HTML5": "HTML5",
+            "CSS3": "CSS3",
+            "React": "React",
+            "Chrome": "Chrome",
+            "Github": "Github"
+        },
+        "hobbies": {
+            "Football": "Football",
+            "Traveling": "Voyager",
+            "Teaching": "Enseignement",
+            "Gaming": "Jeux vidéo",
+            "Music": "Musique",
+            "Fitness": "Fitness",
+            "Reading": "Lecture"
+        },
+        "approach": {
+          "heading": {
+          "part1":"Mon",
+          "part2":"Approche"
+        },
+        "planning": {
+            "title": "Planification & Stratégie",
+            "description": "Nous allons collaborer pour définir les objectifs de votre site web, le public cible et les fonctionnalités clés. Nous discuterons de la structure du site, de la navigation et des exigences en matière de contenu."
+        },
+        "development": {
+            "title": "Développement & Mise à jour des progrès",
+            "description": "Une fois que nous nous sommes mis d'accord sur le plan, je lance ma playlist lofi et je me plonge dans le code. Des esquisses initiales au code soigné, je vous tiens informé à chaque étape."
+        },
+        "launch": {
+            "title": "Développement & Lancement",
+            "description": "C'est ici que la magie opère ! En fonction du design approuvé, je vais traduire tout cela en code fonctionnel, construisant votre site web de A à Z."
+        }
+    }
+    },
+
+    "Contact": {
+        "heading": "Créons quelque chose d'incroyable ensemble",
+        "description": "Prêt à donner vie à votre prochain projet ? Connectons-nous et discutons de la manière dont je peux vous aider à atteindre vos objectifs.",
+        "buttonText": "Contactez-moi"
+    },
+
+    "ContactForm": {
+    "name": "Nom",
+    "email": "Email",
+    "message": "Laissez un message",
+    "placeholder": {
+      "name": "Entrez votre nom",
+      "email": "Entrez votre email",
+      "message": "Entrez le message"
+    },
+    "submit": "Contactez-moi",
+    "success": "Message envoyé avec succès",
+    "error": "Une erreur est survenue. Veuillez réessayer."
+  },
+
+  "ContactDialog":{
+    "title": "Entrons en contact",
+    "description": "Nous vous répondrons dès que possible"
+  },
+
+  "LocaleSwitcher": {
+    "label": "Changer la langue",
+    "locale": "{locale, select, fr {🇫🇷 Français} en {🇬🇧 Anglais} other {Inconnu}}"
+  }
+
+  }

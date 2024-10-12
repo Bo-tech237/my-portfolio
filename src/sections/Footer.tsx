@@ -1,4 +1,5 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
+import LocaleSwitcher from '@/components/LocaleSwitcher';
 
 const footerLinks = [
     { title: 'Facebook', href: 'https://web.facebook.com/arnaud.bokalli' },
@@ -19,6 +20,7 @@ export const Footer = () => {
                         &copy; 2024. BOKALLI FERDINAND
                     </div>
                     <nav className="flex flex-col md:flex-row items-center gap-8">
+                        <LocaleSwitcher />
                         {footerLinks.map((link) => (
                             <a
                                 key={link.title}

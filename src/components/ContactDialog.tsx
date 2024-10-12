@@ -1,7 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import { ContactForm } from './ContactForm';
-import { Button } from './ui/button';
 import {
     Dialog,
     DialogContent,
@@ -21,15 +21,17 @@ type Props = {
 function ContactDialog({ children }: Props) {
     const [isOpen, setIsOpen] = useState(false);
 
+    const t = useTranslations('ContactDialog');
+
     return (
-        <div>
+        <div className="z-40">
             <Dialog onOpenChange={setIsOpen} open={isOpen}>
                 <DialogTrigger asChild>{children}</DialogTrigger>
                 <DialogContent className="w-80 sm:max-w-[425px] flex flex-col items-center bg-popover-foreground text-popover">
                     <DialogHeader>
-                        <DialogTitle>Let&apos;s get in touch</DialogTitle>
+                        <DialogTitle>{t('title')}</DialogTitle>
                         <DialogDescription>
-                            Will reply to you as soon as possible
+                            {t('description')}
                         </DialogDescription>
                     </DialogHeader>
 

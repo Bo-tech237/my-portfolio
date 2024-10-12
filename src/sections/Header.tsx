@@ -1,21 +1,25 @@
+import { useTranslations } from 'next-intl';
+
 export const Header = () => {
+    const t = useTranslations('Nav');
+
     return (
         <div className="flex items-center justify-center fixed top-3 z-10 w-full">
             <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
                 <a href="#hero" className="nav-item">
-                    Home
+                    {t('nav1')}
                 </a>
                 <a href="#project" className="nav-item">
-                    Projects
+                    {t('nav2')}
                 </a>
                 <a href="#about" className="nav-item">
-                    About
+                    {t('nav3')}
                 </a>
                 <a
                     href="#contact"
                     className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
                 >
-                    Contact
+                    {t('nav4')}
                 </a>
             </nav>
         </div>

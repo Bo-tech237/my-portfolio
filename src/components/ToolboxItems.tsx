@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import TechIcon from './TechIcon';
-import { twMerge } from 'tailwind-merge';
+import { cn } from '@/lib/utils';
 
 export default function ToolboxItems({
     items,
@@ -13,13 +13,13 @@ export default function ToolboxItems({
 }) {
     return (
         <div
-            className={twMerge(
+            className={cn(
                 'flex [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]',
                 className
             )}
         >
             <div
-                className={twMerge(
+                className={cn(
                     'flex flex-none py-0.5 gap-6 pr-6',
                     itemsWrapperClassName
                 )}

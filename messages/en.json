@@ -1,0 +1,188 @@
+{
+    "Nav": {
+      "nav1": "Home",
+      "nav2": "Projects",
+      "nav3": "About",
+      "nav4": "Contact"
+      
+    },
+
+    "Hero": {
+      "text1": "Available for new projects",
+      "title": "Building Exceptional User Experineces",
+      "text2": "Hi! I'm Ferdinand, a Next.js Developer.",
+      "text3": "I specialize in transforming designs into functional, high-performing web applications. Let's discuss your next project.",
+      "buttonText1": "Explore My Work",
+      "buttonText2": "Let's connect"
+      
+    },
+
+   "Projects": {
+    "Header": {
+      "eyebrow": "Real-world Results",
+      "title": "Featured Projects",
+      "description": "See how I transformed concepts into engaging digital experiences.",
+      "button": "Visit Live Site"
+    },
+    "ProjectsList": {
+      "E-learningLandingPage": {
+        "company": "Acme Corp",
+        "year": "2022",
+        "title": "E-learning Landing Page",
+        "results":{
+          "title1":"Enhanced user experience by 40%",
+          "title2":"Improved site speed by 50%",
+          "title3":"Increased mobile traffic by 35%"}  
+      },
+      "LightSaasLandingPage": {
+        "company": "Innovative Co",
+        "year": "2021",
+        "title": "Light Saas Landing Page",
+        "results": {
+          "title1":"Boosted sales by 20%",
+          "title2":"Expanded customer reach by 35%",
+          "title3":"Increased brand awareness by 15%"
+        }
+      },
+      "FakeStore": {
+        "company": "Quantum Dynamics",
+        "year": "2023",
+        "title": "Fake Store",
+        "results":{
+          "title1":"Enhanced user experience by 40%",
+          "title2":"Improved site speed by 50%",
+          "title3":"Increased mobile traffic by 35%"
+        }
+      }
+    }
+  },
+    
+    "Tape": {
+      "Words": {
+        "Performant": "Performant",
+        "Accessible": "Accessible",
+        "Secure": "Secure",
+        "Interactive": "Interactive",
+        "Scalable": "Scalable",
+        "User Friendly": "User Friendly",
+        "Responsive": "Responsive",
+        "Maintainable": "Maintainable",
+        "Search Optimized": "Search Optimized",
+        "Usable": "Usable",
+        "Reliable": "Reliable"
+      }
+      
+    },
+
+    "Testimonials": {
+      "eyebrow": "Happy Clients",
+    "title": "What Clients Say About Me",
+    "description": "Don't just take my word for it. See what my clients have to say about my work.",
+    "Alex Turner": {
+      "position": "Marketing Manager @ TechStartups",
+      "text": "Ferdinand was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!"
+    },
+    "Olivia Green": {
+      "position": "Head of Design @ GreenLeaf",
+      "text": "Working with Ferdinand was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations."
+    },
+    "Daniel White": {
+      "position": "CEO @ InnovateCo",
+      "text": "Ferdinand's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier."
+    },
+    "Emily Carter": {
+      "position": "Product Manager @ GlobalTech",
+      "text": "Ferdinand is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers."
+    },
+    "Michael Brown": {
+      "position": "Director of IT @ MegaCorp",
+      "text": "Ferdinand's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him."
+    }
+      
+    },
+
+    "About": {
+      "eyebrow": "About Me",
+      "title": "A Glimpse Into My World",
+      "description": "Learn more about who I am, what I do, and what inspires me.",
+      "myReads": {
+          "header": "My Reads",
+          "description": "Explore the books shaping my perspectives."
+      },
+      "myToolbox": {
+          "header": "My Toolbox",
+          "description": "Explore the technologies and tools I use to craft exceptional digital experiences."
+      },
+      "beyondTheCode": {
+          "header": "Beyond the Code",
+          "description": "Explore my interests and hobbies beyond the digital realm."
+      },
+      "toolbox": {
+          "JavaScript": "JavaScript",
+          "HTML5": "HTML5",
+          "CSS3": "CSS3",
+          "React": "React",
+          "Chrome": "Chrome",
+          "Github": "Github"
+      },
+      "hobbies": {
+          "Football": "Football",
+          "Traveling": "Traveling",
+          "Teaching": "Teaching",
+          "Gaming": "Gaming",
+          "Music": "Music",
+          "Fitness": "Fitness",
+          "Reading": "Reading"
+      },
+      "approach": {
+        "heading": {
+          "part1":"My",
+          "part2":"Approach"
+        },
+        "planning": {
+            "title": "Planning & Strategy",
+            "description": "We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+        },
+        "development": {
+            "title": "Development & Progress Update",
+            "description": "Once we agree on the plan, I cue my lofi playlist and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+        },
+        "launch": {
+            "title": "Development & Launch",
+            "description": "This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+        }
+    }
+  },
+
+  "Contact": {
+        "heading": "Let's create something amazing together",
+        "description": "Ready to bring your next project to life? Let's connect and discuss how I can help you achieve your goals.",
+        "buttonText": "Contact me"
+    },
+
+    "ContactForm": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Leave a message",
+    "placeholder": {
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "message": "Enter message"
+    },
+    "submit": "Contact me",
+    "success": "Message sent successfully",
+    "error": "An error occurred. Please try again."
+  },
+
+  "ContactDialog":{
+    
+      "title": "Let's get in touch",
+      "description": "Will reply to you as soon as possible"
+  
+  },
+
+"LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, fr {🇫🇷 Français} en {🇬🇧 Anglais} other {Inconnu}}"
+  }
+  }

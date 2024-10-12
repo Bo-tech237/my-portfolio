@@ -18,9 +18,12 @@ import { useToast } from '@/hooks/use-toast';
 import { Textarea } from './ui/textarea';
 import { contactSchema, contactTypes } from '@/schemas/schema';
 import { contactMe } from '@/actions/contactMe';
+import { useTranslations } from 'next-intl';
 
 export function ContactForm({ onSend }: { onSend: () => void }) {
     const { toast } = useToast();
+
+    const t = useTranslations('ContactForm');
 
     const form = useForm<contactTypes>({
         resolver: zodResolver(contactSchema),
@@ -44,9 +47,7 @@ export function ContactForm({ onSend }: { onSend: () => void }) {
         toast({
             variant: 'success',
             title: `${
-                result?.success === true
-                    ? result.message
-                    : 'Message sent successfully'
+                result?.success === true ? result.message : t('success')
             }`,
             description: `${new Date().toUTCString()}`,
         });
@@ -61,11 +62,11 @@ export function ContactForm({ onSend }: { onSend: () => void }) {
                         name="name"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Name</FormLabel>
+                                <FormLabel>{t('name')}</FormLabel>
                                 <FormControl>
                                     <Input
                                         className="text-black"
-                                        placeholder="Enter your name"
+                                        placeholder={t('placeholder.name')}
                                         type="text"
                                         {...field}
                                     />
@@ -80,11 +81,11 @@ export function ContactForm({ onSend }: { onSend: () => void }) {
                         name="email"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Email</FormLabel>
+                                <FormLabel>{t('email')}</FormLabel>
                                 <FormControl>
                                     <Input
                                         className="text-black"
-                                        placeholder="Enter your email"
+                                        placeholder={t('placeholder.email')}
                                         type="email"
                                         {...field}
                                     />
@@ -99,10 +100,10 @@ export function ContactForm({ onSend }: { onSend: () => void }) {
                         name="message"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Leave a message</FormLabel>
+                                <FormLabel>{t('message')}</FormLabel>
                                 <FormControl>
                                     <Textarea
-                                        placeholder="Enter message"
+                                        placeholder={t('placeholder.message')}
                                         className="resize-none text-black"
                                         {...field}
                                     />
@@ -125,7 +126,7 @@ export function ContactForm({ onSend }: { onSend: () => void }) {
                                         className="animate-spin"
                                     />
                                 )}
-                                Contact me
+                                {t('submit')}
                             </span>
                         </Button>
                     </div>

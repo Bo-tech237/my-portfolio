@@ -3,20 +3,24 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect';
+import { useTranslations } from 'next-intl';
 
 export function MyApproach() {
+    const t = useTranslations('About');
+
     return (
         <section className="w-full pt-20">
             <h1 className="font-bold text-4xl md:text-5xl text-center">
-                My <span className="text-emerald-300">approach</span>
+                {t('approach.heading.part1')}{' '}
+                <span className="text-emerald-300">
+                    {t('approach.heading.part2')}
+                </span>
             </h1>
             <div className="mt-20 flex flex-col lg:flex-row items-center justify-center gap-4">
                 <Card
-                    title="Planning & Strategy"
+                    title={t('approach.planning.title')}
                     icon={<AceternityIcon order="Phase 1" />}
-                    description="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+                    description={t('approach.planning.description')}
                 >
                     <CanvasRevealEffect
                         animationSpeed={5.1}
@@ -24,11 +28,9 @@ export function MyApproach() {
                     />
                 </Card>
                 <Card
-                    title="Development & Progress Update"
+                    title={t('approach.development.title')}
                     icon={<AceternityIcon order="Phase 2" />}
-                    description="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+                    description={t('approach.development.description')}
                 >
                     <CanvasRevealEffect
                         animationSpeed={3}
@@ -43,11 +45,9 @@ export function MyApproach() {
                     {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
                 </Card>
                 <Card
-                    title="Development & Launch"
+                    title={t('approach.launch.title')}
                     icon={<AceternityIcon order="Phase 3" />}
-                    description="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+                    description={t('approach.launch.description')}
                 >
                     <CanvasRevealEffect
                         animationSpeed={3}

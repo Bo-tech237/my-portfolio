@@ -5,8 +5,12 @@ import grainImage from '@/assets/images/grain.jpg';
 import StarIcon from '@/assets/icons/star.svg';
 import SparkleIcon from '@/assets/icons/sparkle.svg';
 import HeroOrbit from '@/components/HeroOrbit';
+import ContactDialog from '@/components/ContactDialog';
+import { useTranslations } from 'next-intl';
 
 export const HeroSection = () => {
+    const t = useTranslations('Hero');
+
     return (
         <div
             className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
@@ -128,42 +132,38 @@ export const HeroSection = () => {
                         <div className=" bg-green-500 size-2.5 rounded-full relative">
                             <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
                         </div>
-                        <div className="text-sm font-medium">
-                            Available for new projects
-                        </div>
+                        <div className="text-sm font-medium">{t('text1')}</div>
                     </div>
                 </div>
                 <div className="max-w-lg mx-auto">
                     <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-                        Building Exceptional User Experineces
+                        {t('title')}
                     </h1>
                     <p className="mt-4 text-center md:text-xl tracking-tight">
-                        Hi! I&apos;m Ferdinand, a Next.js Developer.
+                        {t('text2')}
                     </p>
                     <p className="mt-4 text-center text-white/60 md:text-lg">
-                        I specialize in transforming designs into
-                        functional,high-performing web applications. Let&apos;s
-                        discuss your next project.
+                        {t('text3')}
                     </p>
                 </div>
                 <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
                     <a href="#project" className="z-40">
                         <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl z-40">
                             <span className="font-semibold">
-                                Explore My Work
+                                {t('buttonText1')}
                             </span>
                             <ArrowDown className="size-4" />
                         </button>
                     </a>
 
-                    <a href="#contact" className="z-40">
+                    <ContactDialog>
                         <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-40">
                             <span>👋</span>
                             <span className="font-semibold">
-                                Let&apos;s connect
+                                {t('buttonText2')}
                             </span>
                         </button>
-                    </a>
+                    </ContactDialog>
                 </div>
             </div>
         </div>
