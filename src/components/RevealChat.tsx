@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { WhatsappShareButton, WhatsappIcon } from 'next-share';
+import { WhatsappIcon } from 'next-share';
 import { useTranslations } from 'next-intl';
 
 export const RevealChat = () => {
@@ -14,6 +14,9 @@ export const RevealChat = () => {
         'portfolioLink'
     )}\n\n${t('support')}`;
     const encodedMessage = encodeURIComponent(message);
+    const number = process.env.NUMBER!;
+
+    const whatsappLink = `https://wa.me/${number}?text=${encodedMessage}`;
 
     const toggleVisibility = () => {
         if (window.scrollY > 600) {
@@ -35,12 +38,13 @@ export const RevealChat = () => {
         <>
             {isVisible && (
                 <div className="fixed bottom-10 right-2">
-                    <WhatsappShareButton
-                        url={process.env.WHATSAPP_API!}
-                        title={encodedMessage}
+                    <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <WhatsappIcon size={40} round />
-                    </WhatsappShareButton>
+                    </a>
                 </div>
             )}
         </>
