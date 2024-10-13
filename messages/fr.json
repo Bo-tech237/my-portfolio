@@ -182,6 +182,13 @@
   "LocaleSwitcher": {
     "label": "Changer la langue",
     "locale": "{locale, select, fr {🇫🇷 Français} en {🇬🇧 Anglais} other {Inconnu}}"
+  },
+
+  "Chat":{
+    "welcome": "🌟 Bienvenue sur mon Portfolio ! 🌟",
+    "thankYou": "Merci de votre visite ! Je suis développeur web spécialisé en Next.js et je me consacre à la création d'applications web performantes. Je suis toujours à l'affût de projets freelance passionnants et d'opportunités professionnelles. Si ce que vous voyez vous plaît et que vous connaissez quelqu'un qui pourrait bénéficier de mes compétences, n'hésitez pas à partager mon portfolio !",
+    "portfolioLink": "👉 [Portfolio de Ferdinand](https://my-portfolio-rosy-five-91.vercel.app)",
+    "support": "Votre soutien compte beaucoup. Merci !"
   }
 
   }

@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { unstable_setRequestLocale } from 'next-intl/server';
+import { RevealChat } from '@/components/RevealChat';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const calistoga = Calistoga({
@@ -28,6 +29,7 @@ export default async function RootLayout({
 }>) {
     unstable_setRequestLocale(locale);
     const messages = await getMessages();
+
     return (
         <html lang={locale} className="scroll-smooth">
             <body
@@ -40,6 +42,7 @@ export default async function RootLayout({
                 <NextIntlClientProvider messages={messages}>
                     {children}
                     <Toaster />
+                    <RevealChat />
                 </NextIntlClientProvider>
             </body>
         </html>
