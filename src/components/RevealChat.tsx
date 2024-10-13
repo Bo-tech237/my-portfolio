@@ -13,10 +13,10 @@ export const RevealChat = () => {
     const message = `${t('welcome')}\n\n${t('thankYou')}\n\n${t(
         'portfolioLink'
     )}\n\n${t('support')}`;
-    const encodedMessage = encodeURIComponent(message);
-    const number = process.env.NUMBER!;
+    const encodedMessage = encodeURIComponent(message.trim());
+    const whatsappApi = process.env.NEXT_PUBLIC_WHATSAPP_API!;
 
-    const whatsappLink = `https://wa.me/${number}?text=${encodedMessage}`;
+    const whatsappLink = `${whatsappApi}?text=${encodedMessage}`;
 
     const toggleVisibility = () => {
         if (window.scrollY > 600) {
@@ -33,7 +33,7 @@ export const RevealChat = () => {
             window.removeEventListener('scroll', toggleVisibility);
         };
     }, []);
-
+    console.log('WhatsApp Link:', whatsappLink);
     return (
         <>
             {isVisible && (
