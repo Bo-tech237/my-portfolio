@@ -9,7 +9,6 @@ export const RevealChat = () => {
 
     const t = useTranslations('Chat');
 
-    // Construct the share message
     const message = `${t('welcome')}\n\n${t('thankYou')}\n\n${t(
         'portfolioLink'
     )}\n\n${t('support')}`;

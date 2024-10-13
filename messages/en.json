@@ -187,9 +187,9 @@
   },
 
   "Chat":{
-    "welcome": "🌟 Welcome to My Portfolio! 🌟",
+    "welcome": "🌟 Welcome! 🌟",
     "thankYou": "Thank you for visiting! I'm a Next.js web developer specializing in building high-performance web applications. I'm always open to exciting freelance projects and job opportunities. If you like what you see and know someone who could benefit from my skills, please share my portfolio!",
-    "portfolioLink": "👉 [Ferdinand's Portfolio](https://my-portfolio-rosy-five-91.vercel.app)",
+    "portfolioLink": "👉 (https://my-portfolio-rosy-five-91.vercel.app)",
     "support": "Your support means a lot. Thank you!"
   }
   }
