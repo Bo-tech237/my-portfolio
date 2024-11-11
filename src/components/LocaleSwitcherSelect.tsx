@@ -9,6 +9,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 type Props = {
     children: ReactNode;
@@ -25,6 +26,7 @@ export default function LocaleSwitcherSelect({
     const [isPending, startTransition] = useTransition();
     const pathname = usePathname();
     const params = useParams();
+    // const isDesktop = useMediaQuery('(min-width: 768px)');
 
     function onSelectChange(value: string) {
         const nextLocale = value as Locale;
@@ -42,7 +44,7 @@ export default function LocaleSwitcherSelect({
             <SelectTrigger className="bg-emerald-300/30 text-white w-[140px]">
                 <SelectValue placeholder={label} />
             </SelectTrigger>
-            <SelectContent className="bg-emerald-300/30 text-white">
+            <SelectContent side="top" className="bg-emerald-300/30 text-white">
                 {children}
             </SelectContent>
         </Select>
